@@ -36,8 +36,8 @@
             var swipe = (SwipeView)sender;
             offset = e.Offset;
 
-            //if (offset <= -40)
-            //    swipe.Open(OpenSwipeItem.RightItems);
+            if (offset <= -40)
+                swipe.Open(OpenSwipeItem.RightItems);
         }
 
         private void OnSwipeEnded(object sender, SwipeEndedEventArgs e)
